@@ -32,7 +32,6 @@ export const loginStudent = (params, navigate) => {
                         alert(message);
                         sessionStorage.setItem("studentlogin", true);
                         sessionStorage.setItem("token", json["access_token"]);
-                        // sessionStorage.setItem("busdata", JSON.stringify(json["data"]));
                         dispatch({ "type": "LOGIN", "payload": { "data": json["data"].student || [] } });
                         console.log(sessionStorage.getItem("token"));
                         navigate("/attendencecalendar");
