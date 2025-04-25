@@ -412,7 +412,7 @@ const AttendenceCalendar = () => {
                             {studentData[0]?.student_name || "No name available"}
                         </h3> */}
                         <h3 className="text-center">
-                            {single.student_name}
+                            {single?.student_name || "Loading student name..."}
                         </h3>
 
 
